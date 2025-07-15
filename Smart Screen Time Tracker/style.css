@@ -1,0 +1,99 @@
+ * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background: linear-gradient(to right, #ece9e6, #ffffff);
+      color: #2c3e50;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      transition: background 0.3s, color 0.3s;
+      position: relative;
+    }
+    body.dark-mode {
+      background: #1e1e1e;
+      color: #f0f0f0;
+    }
+    #toggleDarkMode {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 0.25rem 0.5rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      transition: background 0.3s;
+    }
+    #toggleDarkMode:hover {
+      background: #0056b3;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    #networkStatus {
+      background: #f8f9fa;
+      border-left: 5px solid #007bff;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 1.5rem;
+      width: 100%;
+      max-width: 500px;
+      text-align: left;
+    }
+    body.dark-mode #networkStatus {
+      background: #2c2c2c;
+      color: #f0f0f0;
+    }
+    #timeDisplay {
+      font-size: 1.25rem;
+      margin: 1rem 0;
+    }
+    #idleDisplay {
+      font-size: 1rem;
+      color: #888;
+      margin-bottom: 1rem;
+    }
+    canvas {
+      background: #fff;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin-top: 1rem;
+      width: 100%;
+      max-width: 500px;
+    }
+    body.dark-mode canvas {
+      background: #2e2e2e;
+    }
+    #exportCSV {
+      margin: 1rem 0.5rem;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      background: #007bff;
+      color: white;
+      transition: background 0.3s;
+    }
+    #exportCSV:hover {
+      background: #0056b3;
+    }
+    footer {
+      margin-top: auto;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
+    body.dark-mode footer {
+      color: #aaa;
+    }
